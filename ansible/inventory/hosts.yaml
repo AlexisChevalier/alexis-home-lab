@@ -1,0 +1,13 @@
+---
+kubernetes:
+  children:
+    master:
+      hosts:
+        home-lab-cluster-1:
+          ansible_user: flux
+          ansible_host: 192.168.0.110
+    worker:
+      hosts:
+        home-lab-cluster-2:
+          ansible_user: flux
+          ansible_host: 192.168.0.111
